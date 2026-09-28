@@ -194,8 +194,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
-    vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/aee_aedv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv.rc \
-    vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/aee_aedv64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.mediatek.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/android.hardware.bluetooth-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth-service-mediatek.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.beanpod.rc \
@@ -212,7 +210,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
-    vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/dcxo_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcxo_nvram_init.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
@@ -240,7 +237,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/lenovoraw.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lenovoraw.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/loghidlvendorservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loghidlvendorservice.rc \
-    vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/microtrust.init_thh.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.init_thh.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
@@ -274,7 +270,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/vendor.microtrust.hardware.thh-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.thh-service.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/le_audio_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/le_audio_codec_capabilities.xml \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/lenovo/clove_row_wifi/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -548,7 +543,6 @@ PRODUCT_PACKAGES += \
     libaal_key \
     libaal_sec \
     libaalservice \
-    libaedv \
     libapmonitor_vendor \
     libapu_mdw \
     libarm_egl_properties_sysprop \
@@ -629,7 +623,6 @@ PRODUCT_PACKAGES += \
     libion_mtk \
     libion_ulit \
     libispcameraca \
-    libladder \
     libminiui \
     libmmprofile \
     libmnetlink_v104 \
@@ -715,7 +708,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.framework.mtksf_ext-V2-ndk \
     vendor.mediatek.hardware.apmonitor-V1-ndk \
     vendor.mediatek.hardware.apmonitor@2.0 \
-    vendor.mediatek.hardware.audio-V1-ndk \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
@@ -1032,7 +1024,6 @@ PRODUCT_PACKAGES += \
     manifest_media_c2_default.xml \
     manifest_thh.xml \
     mapper.mediatek.xml \
-    memtrack-mediatek.xml \
     mtk_lbs_service.xml \
     mtkpower_applist-mtk-default.xml \
     power-mediatek.xml \
@@ -1045,10 +1036,6 @@ PRODUCT_PACKAGES += \
     vendor.lenovo.hardware.touchscreen-service.xml \
     vendor.lenovo.hardware.usb.xml \
     AgentTest \
-    aee_aedv \
-    aee_aedv64 \
-    aee_dumpstatev \
-    aeev \
     atcid \
     audiocmdservice_atci \
     autobt \
@@ -1056,7 +1043,6 @@ PRODUCT_PACKAGES += \
     bp_kmsetkey_ca \
     ccci_mdinit \
     ccci_rpcd \
-    chipinfo \
     dconfig \
     dcxosetcap \
     dexecutor \
@@ -1085,7 +1071,6 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2-mediatek-64b \
     android.hardware.media.c2@1.2-mediatek \
     android.hardware.media.c2@1.2-mediatek-64b \
-    android.hardware.memtrack-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk-legacy \
     android.hardware.thermal-service.mediatek \
     android.hardware.usb-aidl-service.mediatekv1.0 \
@@ -1148,7 +1133,6 @@ PRODUCT_PACKAGES += \
     vendor_mke2fs \
     volte_clientapi_ua \
     volte_rcs_ua \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader
 
